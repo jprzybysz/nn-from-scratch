@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nn-from-scratch"
+  site-url: "https://jprzybysz.github.io/nn-from-scratch"
+  description: "Simple neural networks lib from scratch with nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/jprzybysz/nn-from-scratch"
