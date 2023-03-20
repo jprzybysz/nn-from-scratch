@@ -5,4 +5,10 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://jprzybysz.github.io',
                 'git_url': 'https://github.com/jprzybysz/nn-from-scratch',
                 'lib_path': 'nn_from_scratch'},
-  'syms': {'nn_from_scratch.core': {'nn_from_scratch.core.foo': ('core.html#foo', 'nn_from_scratch/core.py')}}}
+  'syms': { 'nn_from_scratch.mlp': { 'nn_from_scratch.mlp.Perceptron': ('mlp.html#perceptron', 'nn_from_scratch/mlp.py'),
+                                     'nn_from_scratch.mlp.Perceptron.__init__': ('mlp.html#perceptron.__init__', 'nn_from_scratch/mlp.py'),
+                                     'nn_from_scratch.mlp.Perceptron.__str__': ('mlp.html#perceptron.__str__', 'nn_from_scratch/mlp.py'),
+                                     'nn_from_scratch.mlp.Perceptron.activation_function': ( 'mlp.html#perceptron.activation_function',
+                                                                                             'nn_from_scratch/mlp.py'),
+                                     'nn_from_scratch.mlp.Perceptron.output': ('mlp.html#perceptron.output', 'nn_from_scratch/mlp.py'),
+                                     'nn_from_scratch.mlp.Perceptron.train': ('mlp.html#perceptron.train', 'nn_from_scratch/mlp.py')}}}

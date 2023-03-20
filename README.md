@@ -8,16 +8,20 @@ documentation.
 
 ## Install
 
+Install using:
+
 ``` sh
-pip install nn_from_scratch
+  pip install nn-from-scratch
 ```
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+This library provides a
+[`Perceptron`](https://jprzybysz.github.io/nn-from-scratch/mlp.html#perceptron)
+class you can train and test on labaled data.
 
 ``` python
-1+1
+Perceptron(2)
 ```
 
-    2
+    NameError: name 'Perceptron' is not defined
