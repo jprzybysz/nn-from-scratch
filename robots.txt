@@ -1,0 +1,1 @@
+Sitemap: https://jprzybysz.github.io/nn-from-scratch/sitemap.xml

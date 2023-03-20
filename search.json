@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nn-from-scratch",
+    "section": "",
+    "text": "This repo was created for learning purposes and for university class Introduction to neural networks."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nn-from-scratch",
+    "section": "Install",
+    "text": "Install\nInstall using:\n  pip install nn-from-scratch"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nn-from-scratch",
+    "section": "How to use",
+    "text": "How to use\nThis library provides a Perceptron class you can train and test on labaled data.\n\nPerceptron(3)\n\n[0. 0. 0. 0.]"
+  },
+  {
+    "objectID": "mlp.html",
+    "href": "mlp.html",
+    "title": "mlp",
+    "section": "",
+    "text": "source"
+  },
+  {
+    "objectID": "mlp.html#training",
+    "href": "mlp.html#training",
+    "title": "mlp",
+    "section": "Training",
+    "text": "Training\n\nsource\n\nPerceptron.activation_function\n\n Perceptron.activation_function (x:float)\n\nTemporary inner basic activation function – positivity check\n\n\n\n\nType\nDetails\n\n\n\n\nx\nfloat\nWeighted input to neuron\n\n\n\n\nsource\n\n\nPerceptron.output\n\n Perceptron.output (x)\n\nOutput from neuron f(x^Tw)\n\n\n\n\nDetails\n\n\n\n\nx\nValues in columns from input data\n\n\n\n\nsource\n\n\nPerceptron.train\n\n Perceptron.train (data_x, data_y)\n\nTraining loop repeted no_of_iterations times\n\n\n\n\nDetails\n\n\n\n\ndata_x\nInput data columns\n\n\ndata_y\nCorrect labels\n\n\n\nLet’s train our model on previous example dataset and check how the weights will change\n\nx = df[[\"x1\",\"x2\"]].to_numpy()\ny = df[\"y\"].to_numpy()\np.train(x, y)\np\n\n[ 0.   0.1 -0.1]\n\n\nAfter training is done we can predict outputs and compare it with original labels\n\nfor xi, l in zip(x, y):\n    print(l, p.output(xi))\n\n1 1\n1 1\n0 0\n\n\nWe can also plot the line that splits data points\n\na = -p.weights[1]/p.weights[2]\nb = -p.weights[0]/p.weights[2]\n\ndef f(t):\n    return a*t + b\n\nprint(f\"y = {a} * x + {b}\")\n\nax.plot(x, f(x), linestyle='-')\nfig\n\ny = 1.0 * x + 0.0"
+  }
+]
